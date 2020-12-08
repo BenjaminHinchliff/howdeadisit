@@ -24,12 +24,6 @@ fn main() -> Result<()> {
     {
         let repo = Repository::clone(&remote_url, CLONE_PATH)?;
 
-        let mut revwalk = repo.revwalk()?;
-
-        let sorting = git2::Sort::TOPOLOGICAL;
-        revwalk.set_sorting(sorting)?;
-        revwalk.push_head()?;
-
         let last_commit = repo.find_commit(repo.head()?.peel_to_commit()?.id())?;
 
         let commit_time = last_commit.time();
