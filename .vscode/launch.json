@@ -9,7 +9,7 @@
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/target/debug/howdeadisit.exe",
-            "args": [],
+            "args": ["https://github.com/octocat/Spoon-Knife.git"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

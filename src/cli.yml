@@ -1,0 +1,9 @@
+name: howdeadisit
+version: "0.1.0"
+author: Benjamin Hinchliff <benjamin.hinchliff@gmail.com>
+about: checks if a git repository specified by a url is likely maintained
+args:
+    - URL:
+        help: sets the remote url to check
+        index: 1
+        required: true
